@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctorRegister">
+
+  <TextView
+      android:id="@+id/textView8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Registration for Doctor"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.083" />
+
+  <EditText
+      android:id="@+id/licenseNumD"
+      android:layout_width="294dp"
+      android:layout_height="51dp"
+      android:layout_marginTop="40dp"
+      android:ems="10"
+      android:hint="License Number"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.504"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+  <EditText
+      android:id="@+id/dept"
+      android:layout_width="294dp"
+      android:layout_height="51dp"
+      android:layout_marginTop="20dp"
+      android:ems="10"
+      android:hint="Department"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.504"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/licenseNumD" />
+
+  <EditText
+      android:id="@+id/spec"
+      android:layout_width="294dp"
+      android:layout_height="51dp"
+      android:layout_marginTop="20dp"
+      android:ems="10"
+      android:hint="Speciality"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.504"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/dept" />
+
+  <EditText
+      android:id="@+id/addressD"
+      android:layout_width="294dp"
+      android:layout_height="97dp"
+      android:layout_marginTop="20dp"
+      android:ems="10"
+      android:gravity="start|top"
+      android:hint="Address"
+      android:inputType="textMultiLine"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.504"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/spec" />
+
+  <TextView
+      android:id="@+id/textView9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Timing:"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/addressD"
+      app:layout_constraintVertical_bias="0.039" />
+
+  <EditText
+      android:id="@+id/timeFromD"
+      android:layout_width="294dp"
+      android:layout_height="51dp"
+      android:layout_marginTop="20dp"
+      android:ems="10"
+      android:hint="From"
+      android:inputType="time"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.504"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+  <EditText
+      android:id="@+id/timeToD"
+      android:layout_width="294dp"
+      android:layout_height="51dp"
+      android:layout_marginTop="20dp"
+      android:ems="10"
+      android:hint="Time"
+      android:inputType="time"
+      app:layout_constraintBottom_toTopOf="@+id/btnRegisterD"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.504"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/timeFromD"
+      app:layout_constraintVertical_bias="0.056" />
+
+
+  <Button
+      android:id="@+id/btnRegisterD"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="28dp"
+      android:text="Register"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      android:onClick="register_doctor"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8E2ED"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="logout"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="409dp"
+        android:layout_height="103dp"
+        android:layout_margin="16dp"
+        android:background="#B6C5F1"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.016">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#56A1FB"
+            android:backgroundTint="#00FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/DoctorName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Drake Ramoray"
+                android:textSize="22sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/DoctorPhone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+12 34567890"
+                android:textSize="14sp">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/DoctorPlace1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adajan, Surat"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="404dp"
+        android:layout_height="103dp"
+        android:layout_margin="16dp"
+        android:background="#B6C5F1"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#56A1FB"
+            android:backgroundTint="#00FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/DoctorName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. John Watson"
+                android:textSize="22sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/DoctorPhone4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+12 34567890"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/DoctorPlace4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pal, Surat"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="404dp"
+        android:layout_height="103dp"
+        android:layout_margin="16dp"
+        android:background="#B6C5F1"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1"
+        app:layout_constraintVertical_bias="0.043">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#56A1FB"
+            android:backgroundTint="#00FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/DoctorName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. House"
+                android:textSize="22sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/DoctorPhone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+12 34567890"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/DoctorPlace2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Majura Gate, Surat"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="404dp"
+        android:layout_height="103dp"
+        android:layout_margin="16dp"
+        android:background="#B6C5F1"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.095">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#56A1FB"
+            android:backgroundTint="#00FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/DoctorName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. John Doe"
+                android:textSize="22sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/DoctorPhone3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+12 34567890"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/DoctorPlace3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kribhco Township, Surat"
+                android:textSize="14sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
