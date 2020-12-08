@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Digital Doctor</string>
 
+    <string name="scan_barcode">Scan QRcode</string>
+
     <string-array name="bloodGroups">
         <item>A+</item>
         <item>A-</item>
@@ -11,7 +13,5 @@
         <item>O+</item>
         <item>O-</item>
     </string-array>
-
-    <string name="scan_barcode">Scan QRcode</string>
 
 </resources>
