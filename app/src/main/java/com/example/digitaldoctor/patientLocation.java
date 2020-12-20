@@ -68,10 +68,10 @@ public class patientLocation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int i = spType.getSelectedItemPosition();
-                String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json" +
-                        "?location=" + currentLat + "," + currentLong + "&radius=5000" +
-                        "&type=" + hospitalNameList[i] +
-                        "&sensor=true" + "&key=" + getResources().getString(R.string.google_map_key);
+                //String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json" +
+                        //"?location=" + currentLat + "," + currentLong + "&radius=5000" +
+                        //"&type=" + hospitalNameList[i] +
+                        //"&sensor=true" + "&key=" + getResources().getString(R.string.google_map_key);
             }
         });
 
